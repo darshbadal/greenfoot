@@ -38,7 +38,7 @@ public class Hero extends Mover {
         this.world = world;
         this.collisionEngine = collisionEngine;
         this.tileEngine = tileEngine;
-        gravity = 9.8;
+        gravity =15.0;
         acc = 0.6;
         drag = 0.8;
         setImage("p1.png");
@@ -112,7 +112,7 @@ public class Hero extends Mover {
     public void handleInput() {
         if (Greenfoot.isKeyDown("space") /*&& (onGround() == true)*/) {
             //for(Actor Hero : getIntersectingObjects(Tile.class)){
-                velocityY = -15;
+                velocityY = -10;
                 
 
             //}
